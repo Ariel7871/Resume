@@ -34,3 +34,110 @@
     @apply max-w-6xl mx-auto;
   }
 }
+
+/* Mobile Optimizations */
+@layer utilities {
+  /* Mobile-specific button sizing */
+  @media (max-width: 640px) {
+    .btn-primary {
+      @apply py-2 px-4 text-sm;
+    }
+    
+    .btn-secondary {
+      @apply py-2 px-4 text-sm;
+    }
+    
+    .card {
+      @apply p-4 rounded-lg;
+    }
+    
+    .section-padding {
+      @apply py-8 px-3;
+    }
+  }
+  
+  /* Mobile typography scaling */
+  @media (max-width: 640px) {
+    .text-4xl {
+      @apply !text-2xl;
+    }
+    
+    .text-5xl {
+      @apply !text-3xl;
+    }
+    
+    .text-3xl {
+      @apply !text-xl;
+    }
+    
+    .text-2xl {
+      @apply !text-lg;
+    }
+    
+    .text-xl {
+      @apply !text-base;
+    }
+    
+    .text-lg {
+      @apply !text-sm;
+    }
+  }
+  
+  /* Mobile spacing adjustments */
+  @media (max-width: 640px) {
+    .mb-16 {
+      @apply !mb-8;
+    }
+    
+    .mb-12 {
+      @apply !mb-6;
+    }
+    
+    .mb-8 {
+      @apply !mb-4;
+    }
+    
+    .mt-16 {
+      @apply !mt-8;
+    }
+    
+    .mt-12 {
+      @apply !mt-6;
+    }
+    
+    .py-16 {
+      @apply !py-8;
+    }
+    
+    .py-12 {
+      @apply !py-6;
+    }
+  }
+  
+  /* Mobile container adjustments */
+  @media (max-width: 640px) {
+    .container-max {
+      @apply px-3;
+    }
+    
+    .max-w-6xl {
+      @apply !max-w-full;
+    }
+    
+    .max-w-5xl {
+      @apply !max-w-full;
+    }
+    
+    .max-w-4xl {
+      @apply !max-w-full;
+    }
+    
+    .max-w-3xl {
+      @apply !max-w-full;
+    }
+    
+    .max-w-2xl {
+      @apply !max-w-full;
+    }
+  }
+}
