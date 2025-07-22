@@ -16,7 +16,7 @@ function ChatbaseWidget() {
 
       const script = document.createElement("script");
       script.src = "https://www.chatbase.co/embed.min.js";
-      script.id = "xZyP8yLrno1ybPcNlvlej"; // Replace with your real bot ID
+      script.id = "xZyP8yLrno1ybPcNlvlej"; 
       script.setAttribute("domain", "www.chatbase.co");
       document.body.appendChild(script);
     }
