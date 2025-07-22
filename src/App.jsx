@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import Navbar from './components/Navbar'
+import ChatbaseWidget from './components/ChatbaseWidget'
 import Home from './pages/Home'
 import Employment from './pages/Employment'
 import Skills from './pages/Skills'
@@ -12,6 +13,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-50">
+        <ChatbaseWidget />
         <Navbar />
         <AnimatePresence mode="wait">
           <Routes>
