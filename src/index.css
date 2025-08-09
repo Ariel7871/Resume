@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-2 px-6 rounded-lg transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow duration-200;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+}
+
+/* Mobile Optimizations */
+@layer utilities {
+  /* Mobile-specific button sizing */
+  @media (max-width: 640px) {
+    .btn-primary {
+      @apply py-2 px-4 text-sm;
+    }
+    
+    .btn-secondary {
+      @apply py-2 px-4 text-sm;
+    }
+    
+    .card {
+      @apply p-4 rounded-lg;
+    }
+    
+    .section-padding {
+      @apply py-8 px-3;
+    }
+  }
+}
+
+/* Accessible Skip Link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 1rem;
+  background: #111827; /* gray-900 */
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  z-index: 1000;
+}
+.skip-link:focus {
+  left: 1rem;
+}
